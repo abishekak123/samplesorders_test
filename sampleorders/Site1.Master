@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="sampleorders.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head runat="server">
+    <title></title>
+    <script src="../Scripts/Main.js"></script>
+    <link rel="stylesheet" href="Style.css" />
+
+    <link rel="stylesheet" href="https://cnd.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://cnd.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <style>
+        input[type = 'number'] {
+            width: 65px;
+            height: 20px;
+        }
+
+        input[readonly="readonly"] {
+            border: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar">
+            <a href="#Home">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    products
+      <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Antivirus</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            systems
+                <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Servers</a>
+                            <a href="#">Desktops</a>
+                            <a href="#">Blade Servers</a>
+                            <a href="#">Tablet PCs</a>
+
+
+                        </div>
+                    </div>
+
+
+                    <a href="#">Business & Productivity</a>
+                    <a href="#">Audio/Video</a>
+                    <a href="#">Cameras/Digital Cameras</a>
+                    <a href="#">Security</a>
+                    <a href="#">Virtualization</a>
+                    <a href="#">Operating Systems</a>
+                    <a href="#">Networking</a>
+                    <a href="#">Storage</a>
+                    <a href="#">Creativity/Graphic/Publishing</a>
+                    <a href="#">Software Networking</a>
+                    <a href="#">Mobility</a>
+                    <a href="#">Cloud Services</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    brands
+      <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Microsoft</a>
+                    <a href="#">Cisco</a>
+                    <a href="#">Lenovo</a>
+                    <a href="#">IBM</a>
+                    <a href="#">HPE</a>
+                    <a href="#">HP INC</a>
+                    <a href="#">Adobe</a>
+                    <a href="#">Symantec</a>
+                    <a href="#">Dell</a>
+                    <a href="#">APC</a>
+                    <a href="#">LOGITECH</a>
+                    <a href="#">VIEWSONIC</a>
+                    <a href="#">KINGSTON</a>
+                    <a href="#">Jabra</a>
+                    <a href="#">LEXMARK</a>
+                    <a href="#">PLANTRONICS INC</a>
+                    <a href="#">POLYCOM</a>
+                    <a href="#">RED HAT</a>
+                    <a href="#">SAMSUNG</a>
+                    <a href="#">SEAGATE</a>
+                </div>
+            </div>
+            <a href="#support">support</a>
+            <a href="#Myaccount">Myaccount</a>
+            <a href="#Adminstration">Administration</a>
+            <a href="#subscription">Subscription</a>
+        </div>
+
+
+
+        <div style="float: right; padding-right: 33px; padding-top: 10px;">
+            <span>Welcome
+                    Admin hk
+            </span>
+        </div>
+     
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+                      
+           
+
+        </asp:ContentPlaceHolder> 
+     
+        </form>
+    
+    </body>
+    </html>
